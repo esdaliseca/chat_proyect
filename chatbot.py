@@ -1,7 +1,7 @@
 import requests
-from .config import HUGGINGFACE_API_TOKEN
-from .db import ejecutar_consulta
-from .utils import validar_sql, generar_sugerencias, limpiar_datos
+from config import HUGGINGFACE_API_TOKEN  # Sin el punto
+from db import ejecutar_consulta
+from utils import validar_sql, generar_sugerencias, limpiar_datos
 
 def enviar_a_huggingface(pregunta_usuario):
     url = "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1"
