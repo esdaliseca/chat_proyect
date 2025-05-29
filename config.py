@@ -1,9 +1,7 @@
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
+# config.py
 HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
+# Configuración de la base de datos Azure SQL
 
 AZURE_SQL_SERVER = os.getenv("AZURE_SQL_SERVER")
 AZURE_SQL_DATABASE = os.getenv("AZURE_SQL_DATABASE")
